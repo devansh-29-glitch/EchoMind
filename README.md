@@ -71,7 +71,8 @@ might just be two sides of the same neural coin.
 
 ### 🧠 Run It Yourself (Interactive Demo)
 
-You can try both simulations in Google Colab (no setup needed):[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/EchoMind/blob/main/EchoMind_Colab.ipynb)
+You can try both simulations in Google Colab (no setup needed) :- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devansh-29-glitch/EchoMind/blob/main/EchoMind_Demo.ipynb)
+
 
 
 
