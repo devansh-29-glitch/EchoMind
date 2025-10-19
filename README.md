@@ -18,6 +18,8 @@ and reconstructs what it thinks was there.
 Sometimes it’s right.
 Sometimes it’s… a fence jumping over a dog. 🐶
 
+---
+
 ### 🧩 Phase 1 — Textual Memory Reconstruction
 
 The system receives a partial memory:
@@ -50,6 +52,8 @@ and uses computational inpainting to rebuild the scene — as if your hippocampu
 
 Each frame shows the memory becoming clearer :- an echo of how your brain reactivates old neural patterns during recall.
 
+---
+
 ### 🧬 Why This Project Matters
 Cognitive Concept	Computational Analogue
 Hippocampal pattern completion	Image inpainting & probabilistic text reconstruction
@@ -59,6 +63,8 @@ Neural association	Word & pixel co-occurrence mapping
 
 EchoMind bridges cognitive neuroscience and AI, showing how “thinking” and “predicting”
 might just be two sides of the same neural coin.
+
+---
 
 ### 🧠 Run It Yourself (Interactive Demo)
 
@@ -87,11 +93,15 @@ Visualization: Matplotlib, ImageIO
 
 Conceptual Base: Hippocampal attractor models and memory completion theory
 
+---
+
 ### 🧠 Final Thought
 
 Memory isn’t a photograph.
 It’s a painting your mind keeps repainting —
 and sometimes, the fence does jump over the dog.
+
+---
 
 ### 👨‍💻 Created By
 
