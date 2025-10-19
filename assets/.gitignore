@@ -1,0 +1,26 @@
+# Ignore virtual environments
+venv/
+ENV/
+env/
+
+# Ignore Python cache and build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+
+# Ignore data dumps and large files
+*.csv
+*.h5
+*.zip
+*.tar
+*.gz
+
+# Ignore OS junk
+.DS_Store
+Thumbs.db
+
+# Ignore Jupyter and Colab temp
+.ipynb_checkpoints/
