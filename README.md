@@ -118,6 +118,104 @@ A neuroscience-inspired experiment in AI reconstruction.
 ---
 
 
+---
 
+
+---
+
+
+
+# 🧠 EchoMind — Simulated Memory Reconstruction
+
+> “The fence jumped over the dog.”  
+> Yes, that’s right. That’s the sentence our model remembered.  
+> Just like a brain reconstructing a half-forgotten dream, **EchoMind** fills in the blanks.
+
+---
+
+### 🎯 Concept
+
+EchoMind simulates **hippocampal pattern completion** — the brain’s ability to rebuild a memory from partial cues.  
+Give it a broken sentence or even a corrupted image, and it “remembers” the most likely whole.
+
+It’s inspired by neuroscience, powered by AI, and designed to show how machines can **recreate the way humans recall, reconstruct, and even distort memories**.
+
+---
+
+### 🚀 Run in Google Colab
+
+Click below to open and run the experiment instantly — no setup required:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/EchoMind/blob/main/EchoMind_Colab.ipynb)
+
+---
+
+### 🧩 Text Memory Reconstruction Example
+
+**Input**
+the _ jumped over the _
+
+markdown
+Copy code
+
+**Reconstruction Process**
+- Step 1 → `the fence jumped over the _`  
+- Step 2 → `the fence jumped over the dog`
+
+**Final Output**
+the fence jumped over the dog
+
+yaml
+Copy code
+
+🧠 A perfect example of how our brains might complete missing information based on stored associations.
+
+**Visualization of recall progress**
+
+![Reconstruction Progress](assets/text_reconstruction_curve.png)
+
+---
+
+### 🖼️ Memory Reconstruction (Animated GIFs)
+
+| EEG Memory Scroll | Spectrogram View |
+|:------------------:|:----------------:|
+| ![EEG Scroll](assets/eeg_scroll.gif) | ![Spectrogram](assets/eeg_spectrogram.gif) |
+
+These visualizations show how signals evolve as EchoMind “remembers” —  
+just as neural activity stabilizes when the brain recalls a pattern.
+
+---
+
+### 🧠 Scientific Basis
+
+EchoMind is grounded in **hippocampal attractor network theory**,  
+where incomplete neural activations settle into stable patterns representing complete memories.
+
+In essence:
+> “When you recall a fragment, your brain recreates the whole.”  
+EchoMind translates this biological principle into code.
+
+---
+
+### 🧩 Built With
+
+- 🧬 **PyTorch / Transformers** — memory pattern generation  
+- 🧠 **GPT-2** — linguistic pattern completion  
+- 🎨 **Matplotlib + Seaborn** — visual memory mapping  
+- ⚙️ **Google Colab** — one-click AO demonstration
+
+---
+
+### 🧾 Context
+
+This project is part of a neuroscience-driven AI research portfolio:  
+**SynapseNet → Somnus → EchoMind → (Next: Neural Drift)**  
+Each explores a different cognitive process through machine learning.
+
+---
+
+⭐ **Created by [Your Name]**  
+Exploring the interface between **memory, cognition, and machine intelligence**.
 
 
