@@ -1,8 +1,11 @@
 
-> “The fence jumped over the dog.”
-> Yes, that’s right.
-> It’s the sentence EchoMind remembered, not what actually happened, but what it thought happened.
-> Just like your brain, it tried to fill in the blanks… and got it charmingly wrong.
+“The fence jumped over the dog.”
+
+Yes, that’s right.
+
+It’s the sentence EchoMind remembered, not what actually happened, but what it thought happened.
+
+Just like your brain, it tried to fill in the blanks… and got it charmingly wrong.
 
 # 🧠 Project EchoMind — Simulating Memory Reconstruction
 
