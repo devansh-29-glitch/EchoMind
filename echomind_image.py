@@ -1,10 +1,3 @@
-# echomind_image.py
-# -------------------------------------------
-# EchoMind Phase 2 — Visual Memory Reconstruction
-# Simulates hippocampal pattern completion on images
-# using classical inpainting (no GPU / no heavy DL).
-# -------------------------------------------
-
 import os
 from pathlib import Path
 import numpy as np
@@ -36,7 +29,7 @@ def load_image_or_make_demo():
         circ = (rr-240)**2 + (cc-160)**2 <= 45**2
         img[circ] = [0.2, 0.9, 0.4]
         img = (img*255).astype(np.uint8)
-    # standardize size for faster inpainting
+    # fast karne k liye
     img = transform.resize(img, (360, 540), anti_aliasing=True, preserve_range=True).astype(np.uint8)
     return img
 
@@ -59,7 +52,7 @@ def inpaint_rgb(img, mask):
     result = np.zeros_like(img_float)
     for ch in range(img_float.shape[2]):
         result[..., ch] = inpaint.inpaint_biharmonic(img_float[..., ch], mask, channel_axis=None)
-    # clip and convert back
+    # clip 
     result = np.clip(result, 0, 1)
     return (result*255).astype(np.uint8)
 
@@ -88,26 +81,19 @@ def make_progress_gif(masked, restored, mask, outpath, frames=24):
     imageio.mimsave(outpath, frames_list, duration=0.06)  # ~15 fps
 
 if __name__ == "__main__":
-    # 1) load/generate image
+    
     img = load_image_or_make_demo()
-
-    # 2) make a synthetic 'memory gap' mask
     mask = make_mask(img.shape, holes=3, max_size=0.28)
-
-    # 3) produce masked view
     masked = img.copy()
     masked[mask] = 0  # black-out missing memory regions
-
-    # 4) inpaint (pattern completion)
     restored = inpaint_rgb(img, mask)
 
-    # 5) save assets
     io.imsave("assets/em_original.png", img)
     io.imsave("assets/em_masked.png", masked)
     io.imsave("assets/em_restored.png", restored)
     save_side_by_side(img, masked, restored, "assets/em_triptych.png")
 
-    # 6) “hippocampal recall” GIF
+    #gif recall
     make_progress_gif(masked, restored, mask, "assets/em_recall.gif")
 
     print("✅ Saved:")
