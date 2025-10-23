@@ -23,7 +23,7 @@ Sometimes it’s… a fence jumping over a dog. 🐶
 
 ---
 
-### 🧩 Phase 1 — Textual Memory Reconstruction
+### 🧩 Phase 1 - Textual Memory Reconstruction
 
 The system receives a partial memory:
 
@@ -46,7 +46,7 @@ The reconstruction curve above shows how “confidence” rises as the brain (or
 
 ---
 
-### 🎨 Phase 2 — Visual Memory Reconstruction
+### 🎨 Phase 2 - Visual Memory Reconstruction
 
 Next, EchoMind simulates how the brain restores visual memories when some parts are missing.
 
@@ -100,9 +100,9 @@ and watch it reconstruct the forgotten parts.
 
 📖 **Conceptual Base:** Hippocampal attractor models and memory completion theory
 
-🧠 **GPT-2** — linguistic pattern completion
+🧠 **GPT-2** - linguistic pattern completion
 
-⚙️ **Google Colab** — one-click AO demonstration
+⚙️ **Google Colab** - one-click AO demonstration
 
 ---
 
