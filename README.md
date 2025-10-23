@@ -1,4 +1,3 @@
-
 “The fence jumped over the dog.”
 
 Yes, that’s right.
