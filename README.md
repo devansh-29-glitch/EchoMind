@@ -37,7 +37,7 @@ Result:
 
 
 ### Why this matters:
-In neuroscience, this mirrors hippocampal attractor dynamics —
+In neuroscience, this mirrors hippocampal attractor dynamics :-
 how a few neural cues can trigger the recall of an entire event,
 even if some details are distorted.
 
@@ -50,7 +50,7 @@ The reconstruction curve above shows how “confidence” rises as the brain (or
 Next, EchoMind simulates how the brain restores visual memories when some parts are missing.
 
 It receives a corrupted or masked image (simulating forgotten regions)
-and uses computational inpainting to rebuild the scene — as if your hippocampus were guessing what used to be there.
+and uses computational inpainting to rebuild the scene, as if your hippocampus were guessing what used to be there.
 
 Each frame shows the memory becoming clearer :- an echo of how your brain reactivates old neural patterns during recall.
 
@@ -114,6 +114,7 @@ and sometimes, the fence does jump over the dog.
 ---
 
 ### 👨‍💻 Created By
+*Devansh Sharma*
 
 Devansh Sharma
 Exploring the interface between **memory, cognition, and machine intelligence**.
