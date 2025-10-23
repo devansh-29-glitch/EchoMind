@@ -1,16 +1,10 @@
-# echomind_text.py
-# -------------------------------------------
-# EchoMind Phase 1 — Text Memory Reconstruction
-# Simulates hippocampal pattern completion on text fragments.
-# -------------------------------------------
-
 import random
 import re
 from collections import defaultdict, Counter
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
-# 🌐 Tiny built-in corpus simulating memory traces
+
 CORPUS = [
     "the cat jumped over the fence",
     "the dog barked all night",
@@ -24,7 +18,7 @@ CORPUS = [
     "a child laughed near the playground"
 ]
 
-# 🧩 STEP 1 — Train an n-gram model (bigram-based)
+# bigram wala model
 def train_ngram(corpus):
     model = defaultdict(Counter)
     for sentence in corpus:
@@ -33,7 +27,7 @@ def train_ngram(corpus):
             model[tokens[i]][tokens[i + 1]] += 1
     return model
 
-# 🧠 STEP 2 — Predict next words probabilistically
+# for prediction
 def predict_next(model, word, top_k=3):
     next_words = model.get(word.lower(), {})
     if not next_words:
@@ -43,7 +37,7 @@ def predict_next(model, word, top_k=3):
     sorted_words = sorted(probs.items(), key=lambda x: x[1], reverse=True)
     return [w for w, _ in sorted_words[:top_k]]
 
-# 🧬 STEP 3 — Reconstruct incomplete sentence
+# reconstruction
 def reconstruct_sentence(model, fragment, steps=5):
     words = fragment.lower().split()
     print(f"\n🧠 Starting hippocampal reconstruction for: '{fragment}'")
@@ -63,7 +57,7 @@ def reconstruct_sentence(model, fragment, steps=5):
     print(f"🧩 Reconstructed memory: '{completed}'\n")
     return completed
 
-# 📊 Visualization — reconstruction “confidence” over time
+# visualize
 def plot_progress():
     fig, ax = plt.subplots(figsize=(6, 3))
     ax.plot([0, 20, 50, 80, 100], [0.1, 0.4, 0.65, 0.82, 1.0], marker="o")
@@ -74,7 +68,6 @@ def plot_progress():
     plt.savefig("assets/text_reconstruction_curve.png")
     plt.close(fig)
 
-# 🚀 Run Demo
 if __name__ == "__main__":
     model = train_ngram(CORPUS)
     fragment = "the _ jumped over the _"
