@@ -5,9 +5,9 @@ Yes, that’s right.
 
 It’s the sentence EchoMind remembered, not what actually happened, but what it thought happened.
 
-Just like your brain, it tried to fill in the blanks… and got it charmingly wrong.
+Just like your brain, it tried to fill in the blanks….. and got it charmingly wrong.
 
-# 🧠 Project EchoMind — Simulating Memory Reconstruction
+# 🧠 Project EchoMind - Simulating Memory Reconstruction
 
 ### 🌌 What is EchoMind?
 
